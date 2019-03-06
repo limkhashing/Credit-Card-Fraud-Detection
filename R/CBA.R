@@ -29,7 +29,7 @@ itemFrequencyPlot(trans,topN=20,type="absolute",col=brewer.pal(8,'Pastel2'),
 library(rCBA)
 rules <- fpgrowth(trans, support=0.5, confidence=0.5, maxLength=5, 
                               consequent="AUTHTXN_FRAUD_CHECK", parallel=FALSE)
-summary(rules))
+summary(rules)
 
 # put in dataframe for easier to see
 rulesFrame <- as(rules,"data.frame")
