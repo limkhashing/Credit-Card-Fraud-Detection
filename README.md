@@ -33,4 +33,4 @@ The justification for this is:
 [IBM Watson](https://www.ibm.com/watson) was chosen as it allows building custom Machine Learning models from scratch and also provide APIs for calling the model to make on-demand online predictions.
 
 ## Authors
-* **Lim Kha Shing** - [kslim888](https://github.com/kslim888)
+* **Lim Kha Shing** - [kslim888](https://www.linkedin.com/in/lim-kha-shing-836a24120/)
