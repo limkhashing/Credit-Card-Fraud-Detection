@@ -14,7 +14,7 @@ The justification for this is:
 
 ### Outlines
 * **Java**  -- Contains training and testing for all of the algorithms mentioned. Deployment of models also in this directory
-* **Python** -- Contains Data Visualization for both benchmark and original dataset. A preprocessing script also for the original dataset
+* **Python** -- Contains Exploratory Data Analysis and Visualization for both benchmark and original dataset. A preprocessing script also available for the original dataset
 * **R** --  Contains training and testing for all of the algorithms mentioned. R code is the primary code base for this research project
 
 ### Dataset used
