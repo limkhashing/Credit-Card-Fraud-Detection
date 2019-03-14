@@ -4,7 +4,7 @@ This is a research project collaborated with Cardzone Sdn Bhd (Comapny at KL), w
 
 As a result of the literature study and discussion, Naïve Bayesian, Decision Tree, Frequent Pattern-growth (FP-growth) and Classification using Frequent Patterns have been selected as Data Mining and Machine Learning algorithms for fraud detection. 
 
-The justification for this is:
+The justification for selected algorithm also take into the account of the requirements by the company, such as:
 * **Decision Tree** -- Able to provide fraud rules, which can be embedded into the rule engine
 * **Naïve Bayesian** -- Able to provide probability, such as how probable is the transaction is a fraud
 * **FP-growth** -- To mine frequent patterns out from the fraud dataset. 
