@@ -32,5 +32,7 @@ The justification for this is:
 ## Deployment
 [IBM Watson](https://www.ibm.com/watson) was chosen as it allows building custom Machine Learning models from scratch and also provide APIs for calling the model to make on-demand online predictions.
 
+![Live Online Prediction](https://user-images.githubusercontent.com/30791939/54372585-8de38080-46b6-11e9-87c9-0fe18ad0452c.png)
+
 ## Authors
 * [**Lim Kha Shing**](https://www.linkedin.com/in/lim-kha-shing-836a24120/)
