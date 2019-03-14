@@ -23,7 +23,7 @@ The justification for this is:
 * **preprocessed_dataset.csv** -- Preprocessed dataset from the original dataset
 
 ## Built With
-* [PyCharm](https://www.jetbrains.com/pycharm/)** - The IDE used
+* [PyCharm](https://www.jetbrains.com/pycharm/) - The IDE used
 * [Jupyter Notebook](https://jupyter.org/) - For Data Visualization
 * Python 3.6 programming language
 * R programming language
