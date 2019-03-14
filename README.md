@@ -29,9 +29,16 @@ The justification for this is:
 * R programming language
 * Java with [Apache Spark](https://spark.apache.org/) framework and [JRI (Java/R Interface)](http://www.rforge.net/JRI/) 
 
+### Sample Machine Learning model test performance
+![Sample Machine Learning model test performance](https://user-images.githubusercontent.com/30791939/54373092-9daf9480-46b7-11e9-9fe0-e22d94574749.png)
+
+### Inspect test set with truth value and predicted value
+![Inspect test set](https://user-images.githubusercontent.com/30791939/54373208-d3547d80-46b7-11e9-8e51-648df985c188.png)
+
 ## Deployment
 [IBM Watson](https://www.ibm.com/watson) was chosen as it allows building custom Machine Learning models from scratch and also provide APIs for calling the model to make on-demand online predictions.
 
+### Live Online Prediction
 ![Live Online Prediction](https://user-images.githubusercontent.com/30791939/54372585-8de38080-46b6-11e9-87c9-0fe18ad0452c.png)
 
 ## Authors
