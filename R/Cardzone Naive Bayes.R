@@ -39,8 +39,6 @@ table(train_set$AUTHTXN_FRAUD_CHECK)
 sprintf("Splitted number of testing set %d", nrow(test_set))
 table(test_set$AUTHTXN_FRAUD_CHECK)
 
-print("====================================================")
-
 # Train the Naive Bayes with proprocessed data from python
 require(naivebayes) # naive_bayes (Multinomial)
 require(e1071) # naiveBayes (Gaussian) 
@@ -113,10 +111,14 @@ sprintf("F1 of cross-validation is: %f"       , Reduce("+",cross_f1)        / le
 # reset index of dataframe
 rownames(test_set) <- 1:nrow(test_set) 
 start_time <- Sys.time()
-predict(model, newdata=test_set[12, ], type = 'class', na.action = na.omit)
+predict(model, newdata=test_set[77, ], type = 'raw', na.action = na.omit)
 end_time <- Sys.time()
 time_taken <- end_time - start_time
 time_taken
+
+# Export the model to PMML
+library(r2pmml)
+r2pmml(model, "CardzoneNaiveBayesian.pmml")
 
 # save the Naive Bayes model to disk and load it back
 save(model, file="NaiveBayesGaussian.RData")

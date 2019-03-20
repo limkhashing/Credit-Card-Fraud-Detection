@@ -127,6 +127,10 @@ end_time <- Sys.time()
 time_taken <- end_time - start_time
 time_taken
 
+# Export the model to PMML
+library(r2pmml)
+r2pmml(model, "CardzoneDecisionTree.pmml")
+
 # save the decision tree model to disk and load it back
 save(model, file="DecisionTree.RData")
 load("DecisionTree.RData")

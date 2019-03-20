@@ -73,8 +73,10 @@ public class NaiveBayesR {
 //        performCrossValidation(K_FOLD_NUMBER);
 
         testSingleTransaction();
-        saveModel(SAVE_MODEL_PATH);
-        loadModel();
+        saveAsPMML();
+
+//        saveModel(SAVE_MODEL_PATH);
+//        loadModel();
 
         System.out.println("\n==================== End ====================");
 
@@ -95,8 +97,18 @@ public class NaiveBayesR {
      * Save the trained model
      */
     private static void saveModel(String path) {
-        System.out.println("Saving Naive Bayesian Model as RData...");
+        System.out.println("Saving Naive Bayesian Model as RData in local disk...");
         engine.eval(String.format("save(model, file=\"%s/NaiveBayes.RData\")", path));
+        System.out.println("Finished Save..\n");
+    }
+
+    /**
+     * Save the trained model
+     */
+    private static void saveAsPMML(String path) {
+        System.out.println("Saving Naive Bayesian Model as PMML for deployment...");
+        engine.eval("library(r2pmml)")
+        engine.eval(String.format("r2pmml(model, \"%s/CardzoneNaiveBayesian.pmml\")", path));
         System.out.println("Finished Save..\n");
     }
 
@@ -109,7 +121,7 @@ public class NaiveBayesR {
         System.out.println("\nTest prediction on a single transaction");
         engine.eval("rownames(test_set) <- 1:nrow(test_set)");
         long startTime = System.currentTimeMillis(); // get the start time
-        String[] predictSingleTransaction = engine.eval("capture.output(predict(model, newdata=test_set[77, ], type = 'class', na.action = na.omit))").asStringArray();
+        String[] predictSingleTransaction = engine.eval("capture.output(predict(model, newdata=test_set[77, ], type = 'raw', na.action = na.omit))").asStringArray();
         System.out.println("Result: " + predictSingleTransaction[0].split("\\s+")[1]);
         System.out.println("Testing time on a single transaction takes " + getExecutionTime(startTime) + " milliseconds \n");
     }

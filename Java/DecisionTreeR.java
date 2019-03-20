@@ -76,8 +76,10 @@ public class DecisionTreeR {
 //        performCrossValidation(K_FOLD_NUMBER);
 
         testSingleTransaction();
-        saveModel(SAVE_MODEL_PATH);
-        loadModel();
+        saveAsPMML();
+
+//        saveModel(SAVE_MODEL_PATH);
+//        loadModel();
 
         System.out.println("\n==================== End ====================");
 
@@ -98,8 +100,18 @@ public class DecisionTreeR {
      * Save the trained model
      */
     private static void saveModel(String path) {
-        System.out.println("Saving Decision Tree Learning using CART Model as RData...");
+        System.out.println("Saving Decision Tree Learning using CART Model as local disk...");
         engine.eval(String.format("save(model, file=\"%s/DecisionTree.RData\")", path));
+        System.out.println("Finished Save..\n");
+    }
+
+    /**
+     * Save the trained model as PMML
+     */
+    private static void saveAsPMML(String path) {
+        System.out.println("Saving Decision Tree Model as PMML for deployment...");
+        engine.eval("library(r2pmml)")
+        engine.eval(String.format("r2pmml(model, \"%s/CardzoneDecisionTree.pmml\")", path));
         System.out.println("Finished Save..\n");
     }
 
