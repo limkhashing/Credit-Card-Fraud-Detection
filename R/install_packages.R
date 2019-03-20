@@ -1,6 +1,6 @@
 print("Installing Necessary Packges...")
 
-list_of_packages <- c("caret", "rpart", "precrec", "rattle", "rpart.plot", "naivebayes", "e1071", "rJava")
+list_of_packages <- c("caret", "rpart", "precrec", "rattle", "rpart.plot", "naivebayes", "e1071", "rJava", "devtools")
 for (i in 1:length(list_of_packages)) {
   print(list_of_packages[i])
 }
