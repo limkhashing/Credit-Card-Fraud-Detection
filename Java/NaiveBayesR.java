@@ -73,7 +73,7 @@ public class NaiveBayesR {
 //        performCrossValidation(K_FOLD_NUMBER);
 
         testSingleTransaction();
-        saveAsPMML();
+        saveAsPMML(SAVE_MODEL_PATH);
 
 //        saveModel(SAVE_MODEL_PATH);
 //        loadModel();
@@ -107,7 +107,7 @@ public class NaiveBayesR {
      */
     private static void saveAsPMML(String path) {
         System.out.println("Saving Naive Bayesian Model as PMML for deployment...");
-        engine.eval("library(r2pmml)")
+        engine.eval("library(r2pmml)");
         engine.eval(String.format("r2pmml(model, \"%s/CardzoneNaiveBayesian.pmml\")", path));
         System.out.println("Finished Save..\n");
     }

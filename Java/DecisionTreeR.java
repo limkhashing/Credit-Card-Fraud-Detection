@@ -76,7 +76,7 @@ public class DecisionTreeR {
 //        performCrossValidation(K_FOLD_NUMBER);
 
         testSingleTransaction();
-        saveAsPMML();
+        saveAsPMML(SAVE_MODEL_PATH);
 
 //        saveModel(SAVE_MODEL_PATH);
 //        loadModel();
@@ -110,7 +110,7 @@ public class DecisionTreeR {
      */
     private static void saveAsPMML(String path) {
         System.out.println("Saving Decision Tree Model as PMML for deployment...");
-        engine.eval("library(r2pmml)")
+        engine.eval("library(r2pmml)");
         engine.eval(String.format("r2pmml(model, \"%s/CardzoneDecisionTree.pmml\")", path));
         System.out.println("Finished Save..\n");
     }
