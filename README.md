@@ -1,7 +1,7 @@
 # Research in Machine Learning algorithms in Credit Card Fraud Detection
+> This is a research project collaborated with Cardzone Sdn Bhd (Comapny at KL), which aims to investigate Data Mining and Machine Learning techniques and identifies potential solutions in detecting fraudulent transactions
 
-This is a research project collaborated with Cardzone Sdn Bhd (Comapny at KL), which aims to investigate Data Mining and Machine Learning techniques and identifies potential solutions in detecting fraudulent transactions
-
+## Outcomes
 As a result of the literature study and discussion, Naïve Bayesian, Decision Tree, Frequent Pattern-growth (FP-growth) and Classification using Frequent Patterns have been selected as Data Mining and Machine Learning algorithms for fraud detection. 
 
 The justification for selected algorithm also take into the account of the requirements by the company, such as:
@@ -25,8 +25,8 @@ The justification for selected algorithm also take into the account of the requi
 ## Built With
 * [PyCharm](https://www.jetbrains.com/pycharm/) - The IDE used
 * [Jupyter Notebook](https://jupyter.org/) - For Data Visualization
-* Python 3.6 programming language
-* R programming language
+* Python 3.6 with [Sci-kit learn](https://scikit-learn.org/) framework
+* R programming language. Packages that used please see [install_packages.R](https://github.com/kslim888/Credit-Card-Fraud-Detection/blob/master/R/install_packages.R) 
 * Java with [Apache Spark](https://spark.apache.org/) framework and [JRI (Java/R Interface)](http://www.rforge.net/JRI/) 
 
 ### Sample Machine Learning model test performance
@@ -37,6 +37,7 @@ The justification for selected algorithm also take into the account of the requi
 
 ## Deployment
 [IBM Watson](https://www.ibm.com/watson) was chosen as it allows building custom Machine Learning models from scratch and also provide APIs for calling the model to make on-demand online predictions.
+Once the model deployed as PMML on IBM watson, it will return a JSON result states its probability fraud value
 
 ### Live Online Prediction
 ![Live Online Prediction](https://user-images.githubusercontent.com/30791939/54372585-8de38080-46b6-11e9-87c9-0fe18ad0452c.png)
