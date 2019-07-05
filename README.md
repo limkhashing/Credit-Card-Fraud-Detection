@@ -1,6 +1,6 @@
 # Research in Machine Learning algorithms in Credit Card Fraud Detection
 ![Code coverage](https://img.shields.io/codecov/c/github/codecov/example-python/master.svg)
-
+![FYP](https://img.shields.io/badge/Machine%20Learning-Final%20Year%20Project-brightgreen.svg)
 > This is a research project collaborated with Cardzone Sdn Bhd (Comapny at KL), which aims to investigate Data Mining and Machine Learning techniques and identifies potential solutions in detecting fraudulent transactions
 
 ## Outcomes
