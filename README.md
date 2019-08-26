@@ -1,6 +1,6 @@
 # Research in Machine Learning algorithms in Credit Card Fraud Detection
 ![FYP](https://img.shields.io/badge/Machine%20Learning-Final%20Year%20Project-brightgreen.svg)
-> This is a research project collaborated with Cardzone Sdn Bhd (Comapny at KL), which aims to investigate Data Mining and Machine Learning techniques and identifies potential solutions in detecting fraudulent transactions
+> This is a research project collaborated with [Cardzone Sdn Bhd](http://www.cardzone.com.my/WEB/), which aims to investigate Data Mining and Machine Learning techniques and identifies potential solutions in detecting fraudulent transactions
 
 ## Outcomes
 As a result of the literature study and discussion, Naïve Bayesian, Decision Tree, Frequent Pattern-growth (FP-growth) and Classification using Frequent Patterns have been selected as Data Mining and Machine Learning algorithms for fraud detection. 
