@@ -27,7 +27,7 @@ The justification for selected algorithm also take into the account of the requi
 * [PyCharm](https://www.jetbrains.com/pycharm/) - The IDE used
 * [Jupyter Notebook](https://jupyter.org/) - For Data Visualization
 * Python 3.6 with [Sci-kit learn](https://scikit-learn.org/) framework
-* R programming language. Packages that used please see [install_packages.R](https://github.com/kslim888/Credit-Card-Fraud-Detection/blob/master/R/install_packages.R) 
+* R programming language. Packages that used please see [install_packages.R](https://github.com/limkhashing/Credit-Card-Fraud-Detection/blob/master/R/install_packages.R) 
 * Java with [Apache Spark](https://spark.apache.org/) framework and [JRI (Java/R Interface)](http://www.rforge.net/JRI/) 
 
 ### Sample Machine Learning model test performance
