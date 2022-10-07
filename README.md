@@ -31,17 +31,17 @@ The justification for selected algorithm also take into the account of the requi
 * Java with [Apache Spark](https://spark.apache.org/) framework and [JRI (Java/R Interface)](http://www.rforge.net/JRI/) 
 
 ### Sample Machine Learning model test performance
-![Sample Machine Learning model test performance](./confusion matrix.png)
+![Sample Machine Learning model test performance](https://raw.githubusercontent.com/limkhashing/Credit-Card-Fraud-Detection/test/confusion%20matrix.png)
 
 ### Inspect test set with truth value and predicted value
-![Inspect test set](./precision and recall.png)
+![Inspect test set](https://raw.githubusercontent.com/limkhashing/Credit-Card-Fraud-Detection/test/precision%20and%20recall.png)
 
 ## Deployment
 [IBM Watson](https://www.ibm.com/watson) was chosen as it allows building custom Machine Learning models from scratch and also provide APIs for calling the model to make on-demand online predictions.
 Once the model deployed as PMML on IBM watson, it will return a JSON result states its probability fraud value
 
 ### Live Online Prediction
-![Live Online Prediction](./testing with data.png)
+![Live Online Prediction](https://raw.githubusercontent.com/limkhashing/Credit-Card-Fraud-Detection/test/testing%20with%20data.png)
 
 ## Authors
 * [**Lim Kha Shing**](https://www.linkedin.com/in/lim-kha-shing-836a24120/)
